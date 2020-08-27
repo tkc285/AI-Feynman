@@ -1,6 +1,6 @@
-gfortran -ffixed-line-length-none -O3 -o symbolic_regress1.x symbolic_regress1.f
-gfortran -ffixed-line-length-none -O3 -o symbolic_regress2.x symbolic_regress2.f
-gfortran -ffixed-line-length-none -O3 -o symbolic_regress3.x symbolic_regress3.f
+gfortran -ffixed-line-length-none -O3 -o symbolic_regress1.x symbolic_regress1.f90
+gfortran -ffixed-line-length-none -O3 -o symbolic_regress2.x symbolic_regress2.f90
+gfortran -ffixed-line-length-none -O3 -o symbolic_regress3.x symbolic_regress3.f90
 gfortran -ffixed-line-length-none -O3 -o symbolic_regress_mdl2.x symbolic_regress_mdl2.f
 gfortran -ffixed-line-length-none -O3 -o symbolic_regress_mdl3.x symbolic_regress_mdl3.f
 
