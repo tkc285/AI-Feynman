@@ -13,7 +13,7 @@ from torch.utils import data
 import pickle
 from torch.optim.lr_scheduler import CosineAnnealingLR
 from matplotlib import pyplot as plt
-from .S_remove_input_neuron import remove_input_neuron
+from S_remove_input_neuron import remove_input_neuron
 import time
 
 is_cuda = torch.cuda.is_available()
