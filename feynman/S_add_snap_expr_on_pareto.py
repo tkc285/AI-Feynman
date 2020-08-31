@@ -13,11 +13,11 @@ import copy
 import warnings
 warnings.filterwarnings("ignore")
 import sympy
-from .S_snap import integerSnap
-from .S_snap import zeroSnap
-from .S_snap import rationalSnap
-from .S_get_symbolic_expr_error import get_symbolic_expr_error
-from .get_pareto import Point, ParetoSet
+from S_snap import integerSnap
+from S_snap import zeroSnap
+from S_snap import rationalSnap
+from S_get_symbolic_expr_error import get_symbolic_expr_error
+from get_pareto import Point, ParetoSet
 
 from sympy import preorder_traversal, count_ops
 from sympy.abc import x,y
