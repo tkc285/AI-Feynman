@@ -13,20 +13,20 @@ import copy
 import warnings
 warnings.filterwarnings("ignore")
 import sympy
-from .S_snap import integerSnap
-from .S_snap import zeroSnap
-from .S_snap import rationalSnap
-from .S_get_symbolic_expr_error import get_symbolic_expr_error
-from .get_pareto import Point, ParetoSet
-from .S_brute_force_number import brute_force_number
+from S_snap import integerSnap
+from S_snap import zeroSnap
+from S_snap import rationalSnap
+from S_get_symbolic_expr_error import get_symbolic_expr_error
+from get_pareto import Point, ParetoSet
+from S_brute_force_number import brute_force_number
 
 from sympy import preorder_traversal, count_ops
 from sympy.abc import x,y
 from sympy.parsing.sympy_parser import parse_expr
 from sympy import Symbol, lambdify, N, simplify, powsimp
-from .RPN_to_eq import RPN_to_eq
+from RPN_to_eq import RPN_to_eq
 
-from .S_get_number_DL_snapped import get_number_DL_snapped
+from S_get_number_DL_snapped import get_number_DL_snapped
 
 # parameters: path to data, math (not RPN) expression
 def add_bf_on_numbers_on_pareto(pathdir, filename, PA, math_expr):
