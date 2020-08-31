@@ -1,6 +1,6 @@
 import os
 
-from . import __file__
+# from . import __file__
 
 
 def _get_resource(fname):
