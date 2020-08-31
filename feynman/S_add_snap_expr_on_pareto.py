@@ -25,7 +25,7 @@ from sympy.parsing.sympy_parser import parse_expr
 from sympy import Symbol, lambdify, N, simplify, powsimp, Rational, symbols, S,Float
 import re
 
-from .S_get_number_DL_snapped import get_number_DL_snapped
+from S_get_number_DL_snapped import get_number_DL_snapped
 
 def intify(expr):
     floats = S(expr).atoms(Float)
