@@ -2,27 +2,27 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 from os import path
-from .get_pareto import Point, ParetoSet
-from .RPN_to_pytorch import RPN_to_pytorch
-from .RPN_to_eq import RPN_to_eq
-from .S_NN_train import NN_train
-from .S_NN_eval import NN_eval
-from .S_symmetry import *
-from .S_separability import *
-from .S_change_output import *
-from .S_brute_force import brute_force
-from .S_combine_pareto import combine_pareto
-from .S_get_number_DL import get_number_DL
+from get_pareto import Point, ParetoSet
+from RPN_to_pytorch import RPN_to_pytorch
+from RPN_to_eq import RPN_to_eq
+from S_NN_train import NN_train
+from S_NN_eval import NN_eval
+from S_symmetry import *
+from S_separability import *
+from S_change_output import *
+from S_brute_force import brute_force
+from S_combine_pareto import combine_pareto
+from S_get_number_DL import get_number_DL
 from sympy.parsing.sympy_parser import parse_expr
 from sympy import preorder_traversal, count_ops
-from .S_polyfit import polyfit
-from .S_get_symbolic_expr_error import get_symbolic_expr_error
-from .S_add_snap_expr_on_pareto import add_snap_expr_on_pareto
-from .S_add_sym_on_pareto import add_sym_on_pareto
-from .S_run_bf_polyfit import run_bf_polyfit
-from .S_final_gd import final_gd
-from .S_add_bf_on_numbers_on_pareto import add_bf_on_numbers_on_pareto
-from .dimensionalAnalysis import dimensionalAnalysis
+from S_polyfit import polyfit
+from S_get_symbolic_expr_error import get_symbolic_expr_error
+from S_add_snap_expr_on_pareto import add_snap_expr_on_pareto
+from S_add_sym_on_pareto import add_sym_on_pareto
+from S_run_bf_polyfit import run_bf_polyfit
+from S_final_gd import final_gd
+from S_add_bf_on_numbers_on_pareto import add_bf_on_numbers_on_pareto
+from dimensionalAnalysis import dimensionalAnalysis
 
 PA = ParetoSet()
 def run_AI_all(pathdir,filename,BF_try_time=60,BF_ops_file_type="14ops", polyfit_deg=3, NN_epochs=4000, PA=PA):
@@ -136,7 +136,7 @@ def run_AI_all(pathdir,filename,BF_try_time=60,BF_ops_file_type="14ops", polyfit
         return PA
 
 # this runs snap on the output of aifeynman
-def run_aifeynman(pathdir,filename,BF_try_time,BF_ops_file_type, polyfit_deg=3, NN_epochs=4000, vars_name=[],test_percentage=0):
+def run_aifeynman(pathdir,filename,BF_try_time,BF_ops_file_type, polyfit_deg=3, NN_epochs=4000, vars_name=[],test_percentage=20):
     # If the variable names are passed, do the dimensional analysis first
     filename_orig = filename
     try:
