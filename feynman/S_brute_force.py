@@ -13,7 +13,7 @@ import numpy as np
 import sympy as sp
 from sympy.parsing.sympy_parser import parse_expr
 
-from .resources import _get_resource
+from resources import _get_resource
 
 # sep_type = 3 for add and 2 for mult and 1 for normal
 
