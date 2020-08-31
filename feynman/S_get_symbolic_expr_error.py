@@ -1,6 +1,6 @@
 # Calculates the error of a given symbolic expression applied to a dataset. The input should be a string of the mathematical expression
 
-from .get_pareto import Point, ParetoSet
+from get_pareto import Point, ParetoSet
 from sympy.parsing.sympy_parser import parse_expr
 import numpy as np
 import matplotlib.pyplot as plt
