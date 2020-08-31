@@ -1,6 +1,6 @@
 import numpy as np
 import os
-from .S_run_bf_polyfit import run_bf_polyfit
+from S_run_bf_polyfit import run_bf_polyfit
 
 def get_acos(pathdir,pathdir_write_to,filename,BF_try_time,BF_ops_file_type, PA, polyfit_deg=3):
     try:
