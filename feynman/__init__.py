@@ -2,8 +2,8 @@
 """
 
 
-from .S_run_aifeynman import run_aifeynman
-
+# from .S_run_aifeynman import run_aifeynman (Remove the dot .)
+from S_run_aifeynman import run_aifeynman
 __title__ = "feynman"
 __version__ = "2.0.0"
 __license__ = "MIT"
