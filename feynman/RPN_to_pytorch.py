@@ -18,8 +18,8 @@ from sympy.abc import x,y
 from sympy.parsing.sympy_parser import parse_expr
 from sympy import Symbol, lambdify, N
 
-from .S_get_number_DL_snapped import get_number_DL_snapped
-from .S_get_symbolic_expr_error import get_symbolic_expr_error
+from S_get_number_DL_snapped import get_number_DL_snapped
+from S_get_symbolic_expr_error import get_symbolic_expr_error
 
 # parameters: path to data, RPN expression (obtained from bf)
 def RPN_to_pytorch(data, math_expr, lr = 1e-2, N_epochs = 500):
