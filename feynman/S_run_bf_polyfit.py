@@ -1,18 +1,18 @@
 # add a function to compte complexity
 
-from .get_pareto import Point, ParetoSet
-from .RPN_to_pytorch import RPN_to_pytorch
-from .RPN_to_eq import RPN_to_eq
+from get_pareto import Point, ParetoSet
+from RPN_to_pytorch import RPN_to_pytorch
+from RPN_to_eq import RPN_to_eq
 import numpy as np
 import matplotlib.pyplot as plt
-from .S_brute_force import brute_force
-from .S_get_number_DL_snapped import get_number_DL_snapped
+from S_brute_force import brute_force
+from S_get_number_DL_snapped import get_number_DL_snapped
 from sympy.parsing.sympy_parser import parse_expr
 from sympy import preorder_traversal, count_ops
-from .S_polyfit import polyfit
-from .S_get_symbolic_expr_error import get_symbolic_expr_error
-from .S_add_sym_on_pareto import add_sym_on_pareto
-from .S_add_snap_expr_on_pareto import add_snap_expr_on_pareto
+from S_polyfit import polyfit
+from S_get_symbolic_expr_error import get_symbolic_expr_error
+from S_add_sym_on_pareto import add_sym_on_pareto
+from S_add_snap_expr_on_pareto import add_snap_expr_on_pareto
 import os
 from os import path
 
