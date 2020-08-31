@@ -5,4 +5,4 @@ sympy == 1.4
 pandas
 scipy
 sortedcontainers
-gfortran
+# gfortran        
